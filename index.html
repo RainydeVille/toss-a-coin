@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Witcher Coin Flip</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/gif.js.optimized/dist/gif.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Tavern audio -->
+    <audio id="tavernAudio" loop>
+        <source src="./audio/medieval-citytavern-ambient-235876.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Display Geralt Image -->
+    <div>
+      <img id="geralt" src="./images/Geralt_stuff.webp" alt="Geralt">
+    </div>
+    
+    <!-- Coin container with canvas and button -->
+    <div class="coinContainer">
+      <canvas id="coinCanvas" width="200" height="200"></canvas>
+      <button onclick="tossACoin()">Toss the coin</button>
+    </div>
+
+    <!-- Music Icon-->
+    <i id="musicNote" class="bi bi-music-note-beamed"></i>
+
+    <!-- Witcher coin toss audio-->
+    <audio id="coinSound" src="./audio/witcher-toss-a-coin-to-your-witcher.mp3"></audio>
+
+    <script src="coin.js"></script>
+</body>
+</html>
